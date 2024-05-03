@@ -1,10 +1,10 @@
 
 function scrollToDirection(direction) {
 
-    if(direction == 'left') {
-    document.getElementById("container-boxes").scrollLeft += 250;
+    if(direction == 'top') {
+    document.getElementById("container-boxes").scrollTop += 74;
     } else {
-    document.getElementById("container-boxes").scrollLeft -= 250;
+    document.getElementById("container-boxes").scrollTop -= 74;
     }
 
 
