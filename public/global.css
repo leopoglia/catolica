@@ -7,9 +7,15 @@
 
 .flex{
     display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
 }
 
 .btn-primary{
+    cursor: pointer;
     width: 120px;
     background-color: #fff;
     border: 2px solid #fff;
@@ -21,7 +27,31 @@
 }
 
 .btn-primary:hover{
-    background-color: #000;
+    background-color: transparent;
     color: #fff;
     border: 2px solid #fff;
+}
+
+.btn-secondary{
+    cursor: pointer;
+    width: 120px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn-secondary:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+}
+
+hr{
+    margin: 30px 0;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    width: 100%;
 }

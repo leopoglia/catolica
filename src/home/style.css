@@ -2,7 +2,7 @@ body {
     overflow: hidden;
     margin: 0;
     background-color: #fff;
-    background-image: url("../public/imgs/background.jpg");
+    background-image: url("../../public/imgs/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -41,6 +41,13 @@ header nav ul li a:hover {
     font-weight: 600;
 }
 
+.username {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-right: 20px;
+}
+
 .icon {
     min-width: 60px;
     width: 60px;
@@ -65,7 +72,7 @@ main {
     border-radius: 5px;
 }
 
-.banner{
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +82,8 @@ main {
     font-weight: bold;
 }
 
-.box {
+.box,
+.box-task {
     padding: 10px;
     text-align: center;
     min-width: 200px;
@@ -99,7 +107,15 @@ main {
     cursor: pointer;
 }
 
-.box span{
+.box-task {
+    width: 25% !important;
+    min-width: 25% !important;
+    margin-right: 5px;
+    background-color: transparent;
+    padding: 25px;
+}
+
+.box span {
     font-size: 14px !important;
 }
 
@@ -108,7 +124,7 @@ main {
     border: solid 2px #fff;
 }
 
-.arrow-nav{
+.arrow-nav {
     background: rgba(255, 255, 255, 0.12);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     width: 220px;
@@ -131,11 +147,11 @@ main {
     margin: 0 10px;
 }
 
-.container-boxes::-webkit-scrollbar{
+.container-boxes::-webkit-scrollbar {
     width: 0px !important;
 }
 
-.container-boxes::-webkit-scrollbar, 
+.container-boxes::-webkit-scrollbar,
 .content::-webkit-scrollbar {
     width: 5px;
     height: 0;
@@ -172,7 +188,7 @@ main {
     color: #fff;
 }
 
-.content{
+.content {
     padding: 30px;
     width: 100%;
     color: #fff;
@@ -186,7 +202,7 @@ main {
     border: 2px solid rgba(255, 255, 255, 0.08);
 }
 
-.content h1 {
+.content h1{
     padding: 0 20px;
     font-size: 24px;
     font-weight: 600;
@@ -194,10 +210,62 @@ main {
     margin-top: 0px;
 }
 
-.content p{
+.content h2{
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.content p {
     padding: 0 20px;
     margin: 0;
     text-align: justify;
     font-weight: 400;
     font-size: 14px;
+}
+
+.tasks {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.box-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box-task .number {
+    width: 20%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.box-task button {
+    padding: 0px;
+    height: 30px;
+}
+
+.box-task div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.box-task div p {
+    align-items: center;
+    padding: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .box-task {
+        flex-direction: column;
+    }
 }
