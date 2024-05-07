@@ -110,6 +110,7 @@ main {
 .box-task {
     width: 25% !important;
     min-width: 25% !important;
+    min-height: 200px;
     margin-right: 5px;
     background-color: transparent;
     padding: 25px;

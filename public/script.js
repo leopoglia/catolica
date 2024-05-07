@@ -26,6 +26,13 @@ function scrollToDirection(direction) {
 
 function changeInfos(title, div) {
 
+
+    if(title.includes("Atividade")) {
+        document.getElementById("tasks").style.display = "none";
+    } else{
+        document.getElementById("tasks").style.display = "block";
+    }
+
     const contents = [
         {
             title: "Lógica de Programação",
@@ -70,6 +77,18 @@ function changeInfos(title, div) {
         {
             title: "Simuladores de robótica",
             content: "This is the contact page"
+        },
+        {
+            title: "Atividade 1",
+            content: "",
+        },
+        {
+            title: "Atividade 2",
+            content: "",
+        },
+        {
+            title: "Atividade 3",
+            content: "",
         }
     ]
 
@@ -78,10 +97,11 @@ function changeInfos(title, div) {
         boxes[i].style = "2px solid rgba(255, 255, 255, 0.08)";
     }
 
-    div.style = "border: 2px solid #fff";
+    if (div != null) {
+        div.style = "border: 2px solid #fff";
+    }
 
     document.getElementById("title").innerHTML = title;
-
     let content = contents.find(content => content.title === title).content;
     document.getElementById("description").innerHTML = content;
 
