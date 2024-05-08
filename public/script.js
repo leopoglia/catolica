@@ -29,8 +29,10 @@ function changeInfos(title, div) {
 
     if(title.includes("Atividade")) {
         document.getElementById("tasks").style.display = "none";
+        document.getElementById("title-arrow").style.display = "block";
     } else{
         document.getElementById("tasks").style.display = "block";
+        document.getElementById("title-arrow").style.display = "none";
     }
 
     const contents = [

@@ -125,6 +125,8 @@ main {
     border: solid 2px #fff;
 }
 
+
+
 .arrow-nav {
     background: rgba(255, 255, 255, 0.12);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -187,6 +189,20 @@ main {
 .arrow {
     width: 25px;
     color: #fff;
+}
+
+.box-title{
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.box-title .arrow{
+    margin-right: 20px;
+}
+
+.box-title h1{
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .content {
