@@ -55,7 +55,7 @@ function changeInfos(title, div) {
         },
         {
             title: "Declaração de variáveis",
-            content: ""
+            content: "Em linguagens tipadas como o C que é uma linguagem de tipagem estática, ou seja, o compilador confere antes de executar o código se as variáveis inseridas coincidem com os tipos de dados definidos, a declaração de variáveis é de suma importância, devido a necessidade de ter uma variável a qual se pode chamar. Para isso usamos a %, aqui vai um exemplo:"
         },
         {
             title: "Comandos de Entrada e Saída",
