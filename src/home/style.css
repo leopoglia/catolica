@@ -289,6 +289,7 @@ main {
     margin-left: 15px;
 }
 
+
 @media screen and (max-width: 768px) {
     .box-task {
         flex-direction: column;
