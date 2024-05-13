@@ -1,7 +1,19 @@
 
+const fs = require('fs');
+fs.readFile('teste.html', 'utf8', (err, data)=> {
+    if(err){
+        console.log(err);
+        return;
+    }
+
+    console.log(data);
+})
+
+
+
 openButtonLogin();
 function openButtonLogin() {
-
+    
     if (localStorage.getItem("name") == null) {
         document.getElementById("login").style.display = "block";
         document.getElementById("username").style.display = "none";
@@ -49,9 +61,9 @@ function changeInfos(title, div) {
             title: "Linguagem de Programação C",
             content: ""
         },
-        {
+        { 
             title: "Bibliotecas básicas em C",
-            content: ""
+            content: "<div>Programação C é conhecida pela sua portabilidade e eficiência. Um dos motivos para isso é seu avaliado conjunto de bibliotecas complementárias. As funções das bibliotecas em C são vastas e permitem a realização de tarefas variadas, variando desde ações básicas de entrada e saída até manipulação de strings e alocação de memória. Nesta demo, examinaremos algumas das bibliotecas básicas mais utilizadas em C e compreender as funções fundamentais delas.</div><br/><b>1. Biblioteca stdio.h:<b/>\nEssa biblioteca fornece funções para entrada e saída de dados.<br/><br/><p>Exemplo:<br/>printf(): Utilizada para imprimir na tela.<br/>scanf(): Usada para receber entrada do usuário.<br/>getchar() e putchar(): Para entrada e saída de caracteres.</p><br/><br/><b>2. Biblioteca stdlib.h: </b>Oferece funções para alocação de memória, conversões numéricas, geração de números pseudoaleatórios, entre outros.<br/> <p>Exemplo:<br/><br/> malloc(), calloc(), realloc(): Alocação de memória dinâmica.<br/> atoi(), atof(), strtol(): Conversão de strings para números.<br/> rand(), srand(): Geração de números aleatórios.</p>"
         },
         {
             title: "Declaração de variáveis",
