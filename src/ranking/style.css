@@ -1,0 +1,149 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    background-color: #fff;
+    background-image: url("../../public/imgs/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 80px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover {
+    font-weight: 600;
+}
+
+.icon {
+    min-width: 60px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+
+}
+
+.container-boxes {
+    min-width: 232px;
+    width: 100%;
+    height: calc(100vh - 170px);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    transition: 0.2s;
+    border-radius: 5px;
+
+    padding: 30px;
+    width: 100%;
+    color: #fff;
+    overflow: auto;
+    height: calc(100vh - 180px);
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 180px);
+}
+
+input{
+    background-color: #fff;
+    border: 2px solid #fff;
+    width: 190px;
+    height: 44px;
+    max-height: 44px;
+    padding: 0px 15px;
+    border-radius: 40px;
+    margin: 10px 0;
+    outline: none;
+    color: #000;
+}
+
+input::placeholder{
+    color: #000;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs button{
+    width: 220px;
+}
+
+#ranking{
+    margin-right: 15px;
+}
+
+.container-boxes th{
+    width: 50%;
+}
+
+td{
+    font-weight: 400 !important;
+    text-align: center;
+}

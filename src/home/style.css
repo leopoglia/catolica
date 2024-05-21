@@ -289,6 +289,9 @@ main {
     margin-left: 15px;
 }
 
+#ranking{
+    margin-right: 15px;
+}
 
 @media screen and (max-width: 768px) {
     .box-task {

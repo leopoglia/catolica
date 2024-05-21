@@ -12,14 +12,7 @@ async function getCategoryID(id) {
 }
 
 async function saveCategory(req, res) {
-    const categorys = await crud.get("category");
-
-
-    const category = {
-        name: req.body.name
-    }
-
-    return await crud.save("category", 0, category);
+    return await crud.save("category", 0, req.body);
 }
 
 async function editCategory(req, id) {

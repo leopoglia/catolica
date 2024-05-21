@@ -1,6 +1,6 @@
 openButtonLogin();
 function openButtonLogin() {
-    
+
     if (localStorage.getItem("name") == null) {
         document.getElementById("login").style.display = "block";
         document.getElementById("username").style.display = "none";
@@ -48,7 +48,7 @@ function changeInfos(title, div) {
             title: "Linguagem de Programação C",
             content: ""
         },
-        { 
+        {
             title: "Bibliotecas básicas em C",
             content: "<div>Programação C é conhecida pela sua portabilidade e eficiência. Um dos motivos para isso é seu avaliado conjunto de bibliotecas complementárias. As funções das bibliotecas em C são vastas e permitem a realização de tarefas variadas, variando desde ações básicas de entrada e saída até manipulação de strings e alocação de memória. Nesta demo, examinaremos algumas das bibliotecas básicas mais utilizadas em C e compreender as funções fundamentais delas.</div><br/><b>1. Biblioteca stdio.h:</b>\nEssa biblioteca fornece funções para entrada e saída de dados.<br/><br/><p>Exemplo:<br/>printf(): Utilizada para imprimir na tela.<br/>scanf(): Usada para receber entrada do usuário.<br/>getchar() e putchar(): Para entrada e saída de caracteres.</p><br/><br/><b>2. Biblioteca stdlib.h: </b>Oferece funções para alocação de memória, conversões numéricas, geração de números pseudoaleatórios, entre outros.<br/><br/> <p>Exemplo:<br/> malloc(), calloc(), realloc(): Alocação de memória dinâmica.<br/> atoi(), atof(), strtol(): Conversão de strings para números.<br/> rand(), srand(): Geração de números aleatórios.</p><br/><b>3. Biblioteca string.h: </b>Fornece funções para manipulação de strings.<br/><p><br/>Exemplo:<br/>strlen(): Retorna o comprimento de uma string.<br/>strcpy(), strncpy(), strcat(), strncat(): Manipulação de strings.<br/>strcmp(), strncmp(): Comparação de strings.</p>"
         },
@@ -121,14 +121,31 @@ function changeInfos(title, div) {
 changeInfos("Lógica de Programação", document.getElementById("box-first"));
 
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+///                                        API FETCHS                                     ///
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
 function login() {
+    let url = "http://localhost:8080/api/";
     var name = document.getElementById("name").value;
 
     if (name == "") {
         alert("Digite seu nome");
     } else {
-        localStorage.setItem("name", name);
-        location.href = "../home/index.html";
+
+        fetch(url + "user", {
+            method: 'POST',
+            body: {
+                "name": name
+            }
+        }).then(function(response){
+            console.log(response);
+        })
+
+
+       
     }
 }
 
