@@ -34,7 +34,8 @@ async function saveUser(req, res) {
     }
 
     const user = {
-        name: req.body.name
+        name: req.body.name,
+        poins: 0,
     }
 
     return await crud.save("user", 0, user);
