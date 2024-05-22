@@ -1,9 +1,19 @@
 const crud = require("../../crud");
 
 async function getRanking() {
+
+    const users = await crud.get("user");
     const rankings = await crud.get("ranking");
 
-    return rankings;
+    return users.map(user => {
+        const ranking = rankings.find(ranking => ranking.name === user.name);
+
+        return {
+            name: user.name,
+            points: ranking ? ranking.points : 0,
+        }
+    }
+    );
 }
 
 async function getRankingID(id) {
