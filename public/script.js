@@ -138,9 +138,9 @@ function login() {
         fetch(url + "user", {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'application/json'
             },
-            body: { "name": name }
+            body: JSON.stringify({ name: name })
         }).then(function (res) {
 
             if (res.status == 200) {
