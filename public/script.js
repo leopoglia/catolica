@@ -128,7 +128,7 @@ changeInfos("Lógica de Programação", document.getElementById("box-first"));
 
 
 function login() {
-    let url = "http://localhost:8080/api/";
+    let url = "https://catolica.vercel.app/api/";
     var name = document.getElementById("name").value;
 
     if (name == "") {
