@@ -137,17 +137,16 @@ function login() {
 
         fetch(url + "user", {
             method: 'POST',
-            body: {
-                "name": name
-            }
-        }).then(function(res){
-        }).then(function(result){
+            body: {"name": name }
+        }).then(function (res) {
+            console.log(res);
+        }).then(function (result) {
             console.log(result);
 
         })
 
 
-       
+
     }
 }
 
