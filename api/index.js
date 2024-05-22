@@ -10,11 +10,7 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
 
 app.use(cors(
-    {
-        origin: 'https://leopoglia.github.io/',
-        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-        allowedHeaders: 'Content-Type,Authorization',
-    }
+    { origin: '*' }
 ));
 app.use(express.json());
 
