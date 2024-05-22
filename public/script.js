@@ -140,8 +140,10 @@ function login() {
             body: {
                 "name": name
             }
-        }).then(function(response){
-            console.log(response);
+        }).then(function(res){
+        }).then(function(result){
+            console.log(result);
+
         })
 
 
