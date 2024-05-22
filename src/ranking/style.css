@@ -139,10 +139,6 @@ input::placeholder{
     margin-right: 15px;
 }
 
-.container-boxes th{
-    width: 50%;
-}
-
 td{
     font-weight: 400 !important;
     text-align: center;
