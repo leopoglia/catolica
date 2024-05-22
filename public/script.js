@@ -137,16 +137,19 @@ function login() {
 
         fetch(url + "user", {
             method: 'POST',
-            body: {"name": name }
+            body: { "name": name }
         }).then(function (res) {
-            console.log(res);
-        }).then(function (result) {
-            console.log(result);
 
+            if (res.status == 200) {
+                localStorage.setItem("name", name);
+                location.href = "../home/index.html";
+            } else {
+                alert("Erro ao logar");
+            }
+
+        }).catch(function (err) {
+            console.log(err);
         })
-
-
-
     }
 }
 
