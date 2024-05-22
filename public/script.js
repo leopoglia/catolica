@@ -164,3 +164,32 @@ function logout() {
     document.getElementById("logout").style.display = "none";
 
 }
+
+
+function getRanking(){
+    console.log("ranking!!!!")
+
+    let url = "https://catolica.vercel.app/api/";
+
+
+        fetch(url + "user", {
+            method: 'GET',
+        }).then(function (res) {
+            return res.json();
+        }
+        ).then(function (data) {
+            console.log(data);
+            let ranking = data.sort((a, b) => b.points - a.points);
+            console.log(ranking);
+            let table = document.getElementById("ranking-table");
+            let html = "";
+            ranking.forEach((user, index) => {
+                html += "<tr><td>" + (index + 1) + "</td><td>" + user.name + "</td><td>" + user.points + "</td></tr>";
+            });
+            table.innerHTML = html;
+        }).catch(function (err) {
+            console.log(err);
+        })
+    
+
+}
