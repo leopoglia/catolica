@@ -182,7 +182,7 @@ function getRanking(){
             let ranking = data.sort((a, b) => b.points - a.points);
             console.log(ranking);
             let table = document.getElementById("ranking-table");
-            let html = "";
+            let html = " <tr><th>Posição</th><th>Nome</th><th>Pontuação</th></tr>";
             ranking.forEach((user, index) => {
                 html += "<tr><td>" + (index + 1) + "</td><td>" + user.name + "</td><td>" + user.points + "</td></tr>";
             });
