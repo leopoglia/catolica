@@ -161,9 +161,11 @@
                 Description
             </p>
 
-            <p id="options-tasks">
-                Description
-            </p>
+            <p id="options-tasks"></p>
+
+            <button id="send-task" class="btn-primary" onclick="sendTask()">
+                Entregar atividade
+            </button>
 
 
             <div class="block" id="tasks">
@@ -171,7 +173,7 @@
                 <h2>Atividades</h2>
 
                 <div class="tasks">
-                    <div class="box-task" onclick="changeInfos('Atividade 1', null)">
+                    <div class="box-task" onclick="changeInfos('Atividade 1', document.getElementById('title'))">
                         <p class="number">1</p>
                         <div>
                             <p>Atividade fácil</p>
@@ -179,7 +181,7 @@
                         </div>
                     </div>
 
-                    <div class="box-task" onclick="changeInfos('Atividade 2', null)">
+                    <div class="box-task" onclick="changeInfos('Atividade 2', document.getElementById('title'))">
                         <p class="number">2</p>
                         <div>
                             <p>Atividade média</p>
@@ -187,7 +189,7 @@
                         </div>
                     </div>
 
-                    <div class="box-task" onclick="changeInfos('Atividade 3', null)">
+                    <div class="box-task" onclick="changeInfos('Atividade 3', document.getElementById('title'))">
                         <p class="number">3</p>
                         <div>
                             <p>Atividade dificil</p>

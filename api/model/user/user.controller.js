@@ -22,6 +22,19 @@ router.put("/:id", (req, res) => {
     userHandler.editUser(req, req.params.id).then(dados => res.json(dados));
 })
 
+
+router.put("/points/:id", (req, res) => {
+    userHandler.editUserPoints(req, req.params.id).then(dados => res.json(dados));
+})
+
+router.put("/level/:id", (req, res) => {
+    userHandler.editUserLevel(req, req.params.id).then(dados => res.json(dados));
+})
+
+router.get("/level/:id", (req, res) => {
+    userHandler.getUserLevel(req.params.level).then(dados => res.json(dados));
+})
+
 router.delete("/:id", (req, res) => {
     userHandler.deleteUser(req.params.id).then(dados => res.json(dados));
 })

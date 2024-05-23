@@ -30,15 +30,6 @@ function scrollToDirection(direction) {
 
 function changeInfos(title, div) {
 
-
-    if (title.includes("Atividade")) {
-        document.getElementById("tasks").style.display = "none";
-        document.getElementById("title-arrow").style.display = "block";
-    } else {
-        document.getElementById("tasks").style.display = "block";
-        document.getElementById("title-arrow").style.display = "none";
-    }
-
     const contents = [
         {
             title: "Lógica de Programação",
@@ -46,7 +37,7 @@ function changeInfos(title, div) {
         },
         {
             title: "Linguagem de Programação C",
-            content: ""
+            content: "123"
         },
         {
             title: "Bibliotecas básicas em C",
@@ -85,9 +76,6 @@ function changeInfos(title, div) {
             content: ""
         },
 
-
-
-
         {
             title: "Atividade 1",
             content: "a) O que é lógica de programação?",
@@ -95,7 +83,8 @@ function changeInfos(title, div) {
         },
         {
             title: "Atividade 2",
-            content: "",
+            content: "a) O que é lógica de programação?",
+            options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
         },
         {
             title: "Atividade 3",
@@ -103,24 +92,196 @@ function changeInfos(title, div) {
         }
     ]
 
-    var boxes = document.getElementsByClassName("box");
-    for (var i = 0; i < boxes.length; i++) {
-        boxes[i].style = "2px solid rgba(255, 255, 255, 0.08)";
-    }
+    if (title.includes("Atividade")) {
 
-    if (div != null) {
-        div.style = "border: 2px solid #fff";
+        var options = tasksOptions(title, div, contents);
+
+        if (options == false) {
+            document.getElementById("tasks").style.display = "block";
+            document.getElementById("title-arrow").style.display = "none";
+            document.getElementById("send-task").style.display = "none";
+            return;
+        } else {
+            var options = contents.find(content => content.title === title).options;
+            document.getElementById("options-tasks").innerHTML = options;
+            document.getElementById("send-task").style.display = "block";
+        }
+
+    } else {
+        document.getElementById("tasks").style.display = "block";
+        document.getElementById("title-arrow").style.display = "none";
+        document.getElementById("send-task").style.display = "none";
+
+
+        var boxes = document.getElementsByClassName("box");
+        for (var i = 0; i < boxes.length; i++) {
+            boxes[i].style = "2px solid rgba(255, 255, 255, 0.08)";
+        }
+
+        if (div != null) {
+            div.style = "border: 2px solid #fff";
+        }
     }
 
     document.getElementById("title").innerHTML = title;
     let content = contents.find(content => content.title === title).content;
     document.getElementById("description").innerHTML = content;
 
-    if (title.includes("Atividade")) {
-        var options = contents.find(content => content.title === title).options;
-        document.getElementById("options-tasks").innerHTML = options;
+
+}
+
+
+function sendTask() {
+
+    let url = "https://catolica.vercel.app/api/user";
+    let level = localStorage.getItem("level");
+    let userID = localStorage.getItem("userID");
+
+    fetch(url + "user/level/" + userID, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ level: level + 1 })
+    }).then(function (res) {
+        if (res.status == 200) {
+            alert("Atividade concluída com sucesso");
+            location.href = "../home/index.html";
+        } else {
+            alert("Erro ao concluir atividade");
+        }
+    }).catch(function (err) {
+        console.log(err);
+    })
+
+}
+
+
+function tasksOptions(title, div, contents) {
+    let level = localStorage.getItem("level");
+    let page = div.innerText;
+
+    if (localStorage.getItem("name") == null) {
+        location.href = "../login/index.html";
+        return;
     }
 
+    document.getElementById("tasks").style.display = "none";
+    document.getElementById("title-arrow").style.display = "block";
+
+    switch (page) {
+        case "Lógica de Programação":
+
+            if (title == "Atividade 1") {
+                return alertTask(level, 1);
+            } else if (title == "Atividade 2") {
+                return alertTask(level, 2);
+            } else if (title == "Atividade 3") {
+                return alertTask(level, 3);
+            }
+            break;
+        case "Linguagem de Programação C":
+            if (title == "Atividade 1") {
+                return alertTask(level, 4);
+            } else if (title == "Atividade 2") {
+                return alertTask(level, 5);
+            } else if (title == "Atividade 3") {
+                return alertTask(level, 6);
+            }
+            break;
+        case "Bibliotecas básicas em C":
+            if (title == "Atividade 1") {
+                return alertTask(level, 7);
+            } else if (title == "Atividade 2") {
+                return alertTask(level, 8);
+            } else if (title == "Atividade 3") {
+                return alertTask(level, 9);
+            }
+            break;
+        case "Declaração de variáveis":
+            if (title == "Atividade 1") {
+                return alertTask(level, 10);
+            } else if (title == "Atividade 2") {
+                return alertTask(level, 11);
+            } else if (title == "Atividade 3") {
+                return alertTask(level, 12);
+            }
+            break;
+        case "Comandos de Entrada e Saída":
+            if (title == "Atividade 1") {
+                return alertTask(level, 13);
+            } else if (title == "Atividade 2") {
+                return alertTask(level, 14);
+            } else if (title == "Atividade 3") {
+                return alertTask(level, 15);
+            }
+            break;
+        case "Condicional":
+            if (title == "Atividade 1") {
+                return alertTask(level, 16);
+            } else if (title == "Atividade 2") {
+                return alertTask(level, 17);
+            } else if (title == "Atividade 3") {
+                return alertTask(level, 18);
+            }
+            break;
+        case "Laços de Repetição":
+            if (title == "Atividade 1") {
+                return alertTask(level, 19);
+            } else if (title == "Atividade 2") {
+                return alertTask(level, 20);
+            } else if (title == "Atividade 3") {
+                return alertTask(level, 21);
+            }
+            break;
+        case "Funções":
+            if (title == "Atividade 1") {
+                return alertTask(level, 22);
+            } else if (title == "Atividade 2") {
+                return alertTask(level, 23);
+            } else if (title == "Atividade 3") {
+                return alertTask(level, 24);
+            }
+            break;
+        case "Conhecendo o Arduino":
+            if (title == "Atividade 1") {
+                return alertTask(level, 25);
+            } else if (title == "Atividade 2") {
+                return alertTask(level, 26);
+            } else if (title == "Atividade 3") {
+                return alertTask(level, 27);
+            }
+            break;
+        case "Componentes básicos do Arduino":
+            if (title == "Atividade 1") {
+                return alertTask(level, 28);
+            } else if (title == "Atividade 2") {
+                return alertTask(level, 29);
+            } else if (title == "Atividade 3") {
+                return alertTask(level, 30);
+            }
+            break;
+        case "Simuladores de robótica":
+            if (title == "Atividade 1") {
+                return alertTask(level, 31);
+            } else if (title == "Atividade 2") {
+                return alertTask(level, 32);
+            } else if (title == "Atividade 3") {
+                return alertTask(level, 33);
+            }
+            break;
+    }
+}
+
+function alertTask(level, step) {
+    if (level < step) {
+        alert("Você precisa completar as atividades anteriores para acessar essa atividade");
+        return false;
+    } else if (level > step) {
+        alert("Você já completou essa atividade");
+        return false;
+    }
+    return true;
 }
 
 
@@ -148,14 +309,15 @@ function login() {
             },
             body: JSON.stringify({ name: name })
         }).then(function (res) {
-
-            if (res.status == 200) {
+            return res.json();
+        }).then(function (data) {
+            console.log(data);
+            if (data.status == 200) {
                 localStorage.setItem("name", name);
-                location.href = "../home/index.html";
+                // location.href = "../home/index.html";
             } else {
                 alert("Erro ao logar");
             }
-
         }).catch(function (err) {
             console.log(err);
         })

@@ -30,12 +30,13 @@ async function saveUser(req, res) {
     }
 
     if (verify != -1) {
-        return { status: "404", error: "002", message: "Alguém já usa esse email!" }
+        return user;
     }
 
     const user = {
         name: req.body.name,
         points: 0,
+        level: 1,
     }
 
     return await crud.save("user", 0, user);
@@ -43,6 +44,27 @@ async function saveUser(req, res) {
 
 async function editUser(req, id) {
     return await crud.save("user", id, req.body);
+}
+
+async function editUserPoints(req, id) {
+    const user = await crud.getID("user", id);
+
+    user.points += req.body.points;
+
+    return await crud.save("user", id, user);
+}
+
+async function editUserLevel(req, id) {
+    const user = await crud.getID("user", id);
+
+    user.level += req.body.level;
+
+    return await crud.save("user", id, user);
+}
+
+async function getUserLevel(req, userID) {
+    const user = await crud.getID("user", userID);
+    return user.level;
 }
 
 async function deleteUser(id) {
@@ -74,6 +96,9 @@ module.exports = {
     getUserID,
     saveUser,
     editUser,
+    editUserPoints,
+    editUserLevel,
+    getUserLevel,
     deleteUser,
     auth
 }
