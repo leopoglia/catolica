@@ -18,19 +18,24 @@ async function getUserID(id) {
     return user;
 }
 
+async function getUserByName(name) {
+    const user = await crud.get("user");
+
+    return user.find(u => u.name == name);
+}
+
 async function saveUser(req, res) {
     const users = await crud.get("user");
 
     const name = req.body.name;
     const verify = users.findIndex(u => u.name == name);
 
-
     if (!req.body.name) {
         return { status: "404", error: "001", message: "Você precisa preencher todos os campos..." }
     }
 
     if (verify != -1) {
-        return getUserID(verify);
+        return getUserByName(name);
     }
 
     const user = {
