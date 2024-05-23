@@ -139,10 +139,6 @@ function sendTask() {
 
     fetch(url + "level/" + userID, {
         method: 'PUT',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ level: level })
     }).then(function (res) {
         if (res.status == 200) {
             alert("Atividade concluída com sucesso");
@@ -167,7 +163,7 @@ function getUserLevel() {
         return res.json();
     }).then(function (data) {
         console.log(data);
-        localStorage.setItem("level", data.level);
+        localStorage.setItem("level", data);
     }).catch(function (err) {
         console.log(err);
     })
