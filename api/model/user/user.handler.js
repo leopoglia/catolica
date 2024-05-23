@@ -30,7 +30,7 @@ async function saveUser(req, res) {
     }
 
     if (verify != -1) {
-        return user;
+        return getUserID(verify);
     }
 
     const user = {

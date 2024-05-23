@@ -312,9 +312,10 @@ function login() {
             return res.json();
         }).then(function (data) {
             console.log(data);
-            if (data.status == 200) {
+            if (data?.name) {
                 localStorage.setItem("name", name);
-                // location.href = "../home/index.html";
+                localStorage.setItem("userID", data.id);
+                location.href = "../home/index.html";
             } else {
                 alert("Erro ao logar");
             }
