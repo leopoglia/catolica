@@ -37,7 +37,7 @@ function changeInfos(title, div) {
         },
         {
             title: "Linguagem de Programação C",
-            content: "123"
+            content: "O principal componente do arduino é o microcontrolador e é responsável pelo processamento de software e controle de portas de entrada e saída. É o cérebro do sistema e opera como um computador em um chip pequeno. Além disso, existem outros componentes básicos, como por exemplo:<br/><br/><div class='flex-img'><img style='width:250px' src='https://th.bing.com/th/id/R.df326cde14afef4545b7a2bc23ad7625?rik=l%2bbJm8UtntbWvg&riu=http%3a%2f%2fcdn-reichelt.de%2fbilder%2fweb%2fxxl_ws%2fA300%2fARDUINO_LEONARDO_02.png&ehk=6cxsEGtB4SZke8MFv%2ff6aU8vZr3xZ3dXBqtA33X%2fHNk%3d&risl=&pid=ImgRaw&r=0'></img><br/><div class='infos-arduino'>Fios e jumpers: Conectam os componentes.<br/>LEDs: Emitem luz quando energizados.<br/>Motores: Permitem o movimento de objetos.<br/>Botões: Enviam sinais quando pressionados.<br/>Sensores: Detectam mudanças no ambiente.<br/>Resistores: Controlam o fluxo de corrente.<br/>Servomotores: Controlam o movimento angular com precisão.<br/>Displays: Exibem informações.<br/>Protoboard: Para prototipar circuitos de forma rápida e fácil.</div></div><br/><h3>Um pouco mais a fundo sobre LEDs, resistores e sensores:</h3>Além disso, os LEDs (Light Emitting Diodes) assumem o papel de artistas da luz, iluminando seus projetos Arduino com cores vibrantes e brilho intenso. Imagine-os como miniaturas de lâmpadas, emitindo luz quando energizados, transformando suas ideias em realidade luminosa.</div>"
         },
         {
             title: "Bibliotecas básicas em C",
@@ -133,16 +133,16 @@ function changeInfos(title, div) {
 
 function sendTask() {
 
-    let url = "https://catolica.vercel.app/api/user";
+    let url = "https://catolica.vercel.app/api/user/";
     let level = localStorage.getItem("level");
     let userID = localStorage.getItem("userID");
 
-    fetch(url + "user/level/" + userID, {
+    fetch(url + "level/" + userID, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ level: level + 1 })
+        body: JSON.stringify({ level: level })
     }).then(function (res) {
         if (res.status == 200) {
             alert("Atividade concluída com sucesso");
@@ -164,6 +164,10 @@ function tasksOptions(title, div, contents) {
     if (localStorage.getItem("name") == null) {
         location.href = "../login/index.html";
         return;
+    }
+
+    if(level == null || level == 0 || level == undefined || level == "undefined"){
+        level = 1;
     }
 
     document.getElementById("tasks").style.display = "none";
@@ -315,6 +319,7 @@ function login() {
             if (data?.name) {
                 localStorage.setItem("name", name);
                 localStorage.setItem("userID", data.id);
+                localStorage.setItem("level", data.level);
                 location.href = "../home/index.html";
             } else {
                 alert("Erro ao logar");
