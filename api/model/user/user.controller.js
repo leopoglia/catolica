@@ -32,7 +32,7 @@ router.put("/level/:id", (req, res) => {
 })
 
 router.get("/level/:id", (req, res) => {
-    userHandler.getUserLevel(req.params.level).then(dados => res.json(dados));
+    userHandler.getUserLevel(req.params.id).then(dados => res.json(dados));
 })
 
 router.delete("/:id", (req, res) => {
