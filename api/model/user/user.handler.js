@@ -66,7 +66,7 @@ async function editUserLevel(req, id) {
     return await crud.save("user", id, user);
 }
 
-async function getUserLevel(req, userID) {
+async function getUserLevel(userID) {
     const user = await crud.getID("user", userID);
     return user.level;
 }

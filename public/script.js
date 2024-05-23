@@ -156,6 +156,23 @@ function sendTask() {
 
 }
 
+function getUserLevel() {
+    let url = "https://catolica.vercel.app/api/user/";
+    let userID = localStorage.getItem("userID");
+
+    fetch(url + "level/" + userID, {
+        method: 'GET',
+    }).then(function (res) {
+        console.log(res);
+        return res.json();
+    }).then(function (data) {
+        console.log(data);
+        localStorage.setItem("level", data.level);
+    }).catch(function (err) {
+        console.log(err);
+    })
+}
+
 
 function tasksOptions(title, div, contents) {
     let level = localStorage.getItem("level");
