@@ -33,6 +33,7 @@ const db = getFirestore();
 async function save(table, id, data, body) {
 
     if (id) {
+        const referencesEntity = await setDoc(doc(db, table, id), { ...data });
         const savedData = {
             ...data,
             id: id,
