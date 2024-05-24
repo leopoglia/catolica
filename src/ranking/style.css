@@ -145,7 +145,8 @@ td{
 
 @media screen and (max-width: 768px) {
 
-    header nav ul {
+    header nav ul{
         width: auto;
+        padding: 0px;
     }
 }

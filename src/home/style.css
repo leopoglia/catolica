@@ -338,13 +338,10 @@ main {
 
     header nav ul{
         width: auto;
+        padding: 0px;
     }
-}
 
-
-@media screen and (max-width: 500px) {
     main img {
         display: none;
     }
-    
 }
