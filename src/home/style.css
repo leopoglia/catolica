@@ -304,9 +304,21 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    .box-task {
+
+    .tasks{
         flex-direction: column;
     }
+
+    .box-task {
+        width: auto !important;
+        flex-direction: column;
+    }
+
+    .box-task .number {
+        text-align: center;
+    }
+
+
 }
 
 @media screen and (max-width: 768px) {
