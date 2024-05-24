@@ -3,7 +3,6 @@ body {
     margin: 0;
     background-color: #fff;
     background-image: url("../../public/imgs/background.jpg");
-    background-repeat: no-repeat;
     background-size: 100%;
 
     
@@ -142,4 +141,11 @@ input::placeholder{
 td{
     font-weight: 400 !important;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    header nav ul {
+        width: auto;
+    }
 }
