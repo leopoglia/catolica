@@ -328,7 +328,7 @@ main {
 
     main .content{
         margin-top: 10px;
-        height: calc(100vh - 280px);
+        height: calc(100vh - 340px);
         width: auto;
     }
 
