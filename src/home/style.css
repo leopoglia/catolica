@@ -356,4 +356,8 @@ main {
     main img {
         display: none;
     }
+
+    .username {
+        display: none;
+    }
 }
