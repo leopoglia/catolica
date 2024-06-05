@@ -1,5 +1,4 @@
 body {
-    overflow: hidden;
     margin: 0;
     background-color: #fff;
     background-image: url("../../public/imgs/background.jpg");
@@ -74,14 +73,6 @@ main {
     font-weight: bold;
 }
 
-.container-login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: calc(100vh - 180px);
-}
-
 input{
     background-color: #fff;
     border: 2px solid #fff;
@@ -107,6 +98,41 @@ input::placeholder{
 
 .inputs button{
     width: 220px;
+}
+
+.container-integrants{
+    display: flex;
+    align-items: center;
+    color: white
+}
+
+.container-integrants h2{
+    margin-left: 40px;
+}
+
+.integrants{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.integrants li{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.integrants li div{
+    margin-right: 10px;
+    padding: 10px;
+    color: #fff;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 2px solid rgba(255, 255, 255, 0.08);
 }
 
 @media screen and (max-width: 768px) {
