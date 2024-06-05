@@ -432,7 +432,7 @@ function getUserLevel() {
 
 function tasksOptions(title, div, contents) {
     let level = localStorage.getItem("level");
-    let page = div.innerText;
+    let page = localStorage.getItem("currentQuestion");
 
     if (localStorage.getItem("name") == null) {
         location.href = "../login/index.html";
@@ -445,7 +445,6 @@ function tasksOptions(title, div, contents) {
 
     document.getElementById("tasks").style.display = "none";
     document.getElementById("title-arrow").style.display = "block";
-
     switch (page) {
         case "Lógica de Programação":
 
