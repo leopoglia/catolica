@@ -55,7 +55,7 @@ const contents = [
     },
     {
         title: "Linguagem de Programação C",
-        content: "O principal componente do arduino é o microcontrolador e é responsável pelo processamento de software e controle de portas de entrada e saída. É o cérebro do sistema e opera como um computador em um chip pequeno. Além disso, existem outros componentes básicos, como por exemplo:<br/><br/><div class='flex-img'><img style='width:250px' src='https://th.bing.com/th/id/R.df326cde14afef4545b7a2bc23ad7625?rik=l%2bbJm8UtntbWvg&riu=http%3a%2f%2fcdn-reichelt.de%2fbilder%2fweb%2fxxl_ws%2fA300%2fARDUINO_LEONARDO_02.png&ehk=6cxsEGtB4SZke8MFv%2ff6aU8vZr3xZ3dXBqtA33X%2fHNk%3d&risl=&pid=ImgRaw&r=0'></img><br/><div class='infos-arduino'>Fios e jumpers: Conectam os componentes.<br/>LEDs: Emitem luz quando energizados.<br/>Motores: Permitem o movimento de objetos.<br/>Botões: Enviam sinais quando pressionados.<br/>Sensores: Detectam mudanças no ambiente.<br/>Resistores: Controlam o fluxo de corrente.<br/>Servomotores: Controlam o movimento angular com precisão.<br/>Displays: Exibem informações.<br/>Protoboard: Para prototipar circuitos de forma rápida e fácil.</div></div><br/><h3>Um pouco mais a fundo sobre LEDs, resistores e sensores:</h3>Além disso, os LEDs (Light Emitting Diodes) assumem o papel de artistas da luz, iluminando seus projetos Arduino com cores vibrantes e brilho intenso. Imagine-os como miniaturas de lâmpadas, emitindo luz quando energizados, transformando suas ideias em realidade luminosa.</div>",
+        content: "<div>A linguagem de programação C é uma das linguagens mais antigas e populares. É amplamente usada em sistemas operacionais, jogos e aplicativos de software. Entender a lógica de programação em C é fundamental para desenvolver habilidades de programação.</div><p>1. Estrutura Básica de um Programa em C:</p><p>Um programa em C é composto por funções. A função principal é chamada de main() e é onde o programa começa a ser executado. #include <stdio.h> é uma diretiva de pré-processador que permite usar a função printf() para exibir mensagens na tela. A função main() é onde o programa começa a ser executado. return 0; indica que o programa terminou com sucesso.</p>ou seja:<br>#include <stdio.h> <br>int main() <br>{ <br>	printf(Olá, mundo!\n);<br>     return 0; <br>}<br>Esse programa vai escrever em nossa tela “Olá, mundo!” e irá pular uma linha por conta do “\n” na linha que será printada na tela.<br><p>2. Variáveis em C:</p><p>Em C, as variáveis são usadas para armazenar dados. Antes de usar uma variável, ela precisa ser declarada com um tipo de dado específico. Exemplos:<br>Float - Valor que pode conter números quebrados ou nãoBigint - Valor inteiro que é maior que o int normal, suporta números muito maioresInt - como o próprio nome diz, somente números inteiros</p><p>3. Estruturas de Controle em C:</p><p>Em C, existem estruturas de controle que permitem controlar o fluxo de execução do programa. As principais são:</p><br>Condicional (if/else): Usada para tomar decisões com base em condições.<br>Se uma coisa for “isso” ele irá fazer uma ação, senão ele irá fazer outra coisa.<br>Loop (for, while, do-while): Usado para repetir um conjunto de instruções várias vezes.<br>No caso loop como diz, é um loop ou seja vai ficar em loop refazendo as ações que você determinar, se você determinar para escrever “Legal” como está em repetição iria aparecer assim:<br>LegalLegalLegalLegalLegalLegalLegalLegal…",
         questions: [
 
             {
@@ -105,7 +105,7 @@ const contents = [
     },
     {
         title: "Declaração de variáveis",
-        content: "Em linguagens tipadas como o C que é uma linguagem de tipagem estática, ou seja, o compilador confere antes de executar o código se as variáveis inseridas coincidem com os tipos de dados definidos, a declaração de variáveis é de suma importância, devido a necessidade de ter uma variável a qual se pode chamar. Para isso usamos a %, aqui vai um exemplo:<br/><b class='subtitle'><br/>Tipos de Variáveis</b>"
+        content: "Em linguagens tipadas como o C que é uma linguagem de tipagem estática, ou seja, o compilador confere antes de executar o código se as variáveis inseridas coincidem com os tipos de dados definidos, a declaração de variáveis é de suma importância, devido a necessidade de ter uma variável a qual se pode chamar. Para isso usamos a %, aqui vai um exemplo:<br/><b class='subtitle'><br/>Tipos de Variáveis</b> <div>As variáveis de tipo int, definem números inteiros e podem ser chamadas tanto por %i quanto %d, devido a ambos poderem ser números inteiros, entretanto, a variável double só pode ser chamada por %d, por poder ser também um número não inteiro(com casas decimais), a variável float serve também para apresentar números com casas decimais, a diferença entre elas é que a variável float tem uma precisão de até 6 números após a casa decimal, enquanto double tem a precisão de 10, por isso, quando há possibilidade de apresentar um número com muitas casas decimais, o correto é optar pelo double, já o char é uma variável que é utilizada para guardar caracteres. E quando se trata de guarda uma palavra inteira, deve ser apresentada previamente a quantidade necessária para guardar a palavra.       </div>"
         ,
         questions: [
 
@@ -131,7 +131,7 @@ const contents = [
     },
     {
         title: "Comandos de Entrada e Saída",
-        content: "",
+        content: "<h3>Funções de entrada:</h3><p>Uma função de entrada de dados em C é uma função que permite ao programa receber informações ou dados de alguma fonte externa, como o usuário, um arquivo ou outro programa. Essas funções são essenciais para interação e processamento de dados em programas.</p>Exemplo:<br><p>scanf(): Essa função é usada para ler dados do teclado (entrada padrão) ou de outros fluxos de entrada, como arquivos, e atribuí-los a variáveis. Ela permite especificar o formato esperado dos dados a serem lidos.</p><p>fgets(): Esta função lê uma linha inteira de texto do teclado (entrada padrão) ou de um arquivo e armazena no buffer especificado. Ela é útil para ler strings de entrada de comprimento desconhecido. </p><h3>Funções de saída:</h3><p>Uma função de saída de dados em C é aquela que permite ao programa enviar informações ou dados para algum destino externo, como o monitor (tela), um arquivo ou outro dispositivo de saída. Essas funções são fundamentais para exibir resultados, relatórios ou mensagens para o usuário ou para armazenar informações em arquivos.</p>Exemplo:<br><p>printf(): Essa função é usada para imprimir dados na tela (saída padrão). Ela formata os dados de acordo com a especificação fornecida e os exibe na tela.</p><p>fputs() em C é utilizada para escrever uma string em um arquivo. Ela aceita dois argumentos: a string que você deseja escrever e o ponteiro para o arquivo onde deseja escrever essa string.</p>",
         questions: [
 
             {
@@ -182,7 +182,7 @@ const contents = [
     },
     {
         title: "Laços de Repetição",
-        content: "",
+        content: "<h2> O que são estruturas condicionais? </h2>  <div>  Os laços de repetição, também conhecidos como loops, são estruturas de programação que permitem executar um bloco de código várias vezes de forma eficiente. Eles são fundamentais em programação para automatizar tarefas repetitivas e para processar coleções de dados.</div> <div> Existem geralmente três tipos principais de laços de repetição em muitas linguagens de programação: </div> <ol> <li> For loop (Laço para): O laço for é usado quando se sabe antecipadamente quantas vezes o bloco de código precisa ser repetido. Ele geralmente tem uma estrutura que inclui uma variável de controle, uma condição de parada e uma atualização da variável de controle em cada iteração. </li>    <li> While loop (Laço enquanto): O laço while é usado quando o número de iterações não é conhecido antecipadamente, mas o bloco de código precisa ser repetido enquanto uma condição especificada for verdadeira. Ele verifica a condição antes de cada iteração. </li>   <li>  Do-While loop (Laço faça-enquanto): Alguns idiomas, como C/C++, possuem uma estrutura chamada do-while que é semelhante ao while loop, exceto que a condição é verificada após a execução do bloco de código, garantindo que o bloco seja executado pelo menos uma vez. </li>  </ol><div>Em todos os tipos de loops, é importante garantir que a condição de saída seja eventualmente alcançada para evitar loops infinitos, o que pode travar o programa. Além disso, é comum usar variáveis de controle para rastrear o progresso do loop e evitar problemas de lógica, como acessar dados fora dos limites ou repetir a execução de certos blocos de código desnecessariamente.</div>",
         questions: [
 
             {
@@ -366,8 +366,8 @@ function changeInfos(title, div) {
 
 function sendTask() {
 
-    // let url = "https://catolica.vercel.app/api/user/";
-    let url = "http://localhost:8080/api/user/";
+    let url = "https://catolica.vercel.app/api/user/";
+    // let url = "http://localhost:8080/api/user/";
 
     let level = localStorage.getItem("level");
     let userID = localStorage.getItem("userID");
