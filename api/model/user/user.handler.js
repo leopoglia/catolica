@@ -59,10 +59,10 @@ async function editUserPoints(req, id) {
     return await crud.save("user", id, user);
 }
 
-async function editUserLevel(req, id) {
+async function editUserLevel(id, points) {
     let user = await crud.getID("user", id);
     user.level = user.level + 1; 
-    user.points = user.points + 10;
+    user.points = parseInt(user.points) + parseInt(points);
 
     console.log(user.level);
     console.log(user);

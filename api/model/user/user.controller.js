@@ -27,8 +27,8 @@ router.put("/points/:id", (req, res) => {
     userHandler.editUserPoints(req, req.params.id).then(dados => res.json(dados));
 })
 
-router.put("/level/:id", (req, res) => {
-    userHandler.editUserLevel(req, req.params.id).then(dados => res.json(dados));
+router.put("/level/:id/:points", (req, res) => {
+    userHandler.editUserLevel(req.params.id, req.params.points).then(dados => res.json(dados));
 })
 
 router.get("/level/:id", (req, res) => {
