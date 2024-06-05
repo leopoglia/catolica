@@ -32,7 +32,7 @@ const contents = [
         title: "Lógica de Programação",
         content: "Bem-vindos &agrave; nossa aula sobre l&oacute;gica de programa&ccedil;&atilde;o! Neste curso, vamos explorar os conceitos fundamentais que s&atilde;o essenciais para quem est&aacute; come&ccedil;ando no mundo da programa&ccedil;&atilde;o. Se voc&ecirc; &eacute; novo nessa jornada ou est&aacute; buscando refor&ccedil;ar seus conhecimentos, este &eacute; o lugar certo para come&ccedil;ar.<br /><div style='width: 100%; display: flex'><div><b class='subtitle'><br/>1. O que &eacute; L&oacute;gica de Programa&ccedil;&atilde;o?</b><br />Antes de mergulharmos nos detalhes, vamos entender o que &eacute; l&oacute;gica de programa&ccedil;&atilde;o. Basicamente, a l&oacute;gica de programa&ccedil;&atilde;o &eacute; a habilidade de pensar de forma estruturada e l&oacute;gica para resolver problemas. &Eacute; a base sobre a qual todas as linguagens de programa&ccedil;&atilde;o s&atilde;o constru&iacute;das. Ao dominar a l&oacute;gica de programa&ccedil;&atilde;o, voc&ecirc; ser&aacute; capaz de desenvolver algoritmos eficientes e escrever c&oacute;digo de forma mais clara e organizada.<br/><br/><b class='subtitle'>2. Principais Conceitos</b><br/><b>a) Algoritmos: </b>Um algoritmo &eacute; uma sequ&ecirc;ncia finita e ordenada de instru&ccedil;&otilde;es que descreve um processo para resolver um problema espec&iacute;fico. Ele &eacute; como uma receita que detalha passo a passo o que fazer para alcan&ccedil;ar um resultado desejado.</div><img style='width: 30%; margin-left: 14px' src='https://logicamentepro.com.br/images/card.png'></div><br /><b>b) Vari&aacute;veis e Tipos de Dados:</b> As vari&aacute;veis s&atilde;o espa&ccedil;os de mem&oacute;ria que armazenam valores. Os tipos de dados determinam que tipo de valor uma vari&aacute;vel pode armazenar, como n&uacute;meros, texto ou valores l&oacute;gicos (verdadeiro/falso).<br /><br /><b>c) Estruturas de Controle de Fluxo:</b> S&atilde;o mecanismos que controlam a execu&ccedil;&atilde;o do programa. Isso inclui estruturas condicionais, que permitem tomar decis&otilde;es com base em condi&ccedil;&otilde;es, e estruturas de repeti&ccedil;&atilde;o, que executam um bloco de c&oacute;digo v&aacute;rias vezes.<br /><br /><b>d) Fun&ccedil;&otilde;es / Métodos:</b> S&atilde;o blocos de c&oacute;digo que realizam uma tarefa espec&iacute;fica e podem ser reutilizados em diferentes partes do programa. Isso ajuda a modularizar o c&oacute;digo e facilita a manuten&ccedil;&atilde;o.<br /><br /><b>e) Arrays / Listas:</b> S&atilde;o estruturas de dados que armazenam cole&ccedil;&otilde;es de elementos do mesmo tipo. Permitem armazenar e manipular m&uacute;ltiplos valores de forma eficiente.<br /><br /><b>f) Recurs&atilde;o:</b> &Eacute; um conceito onde uma fun&ccedil;&atilde;o chama a si mesma para resolver um problema menor. &Eacute; uma t&eacute;cnica poderosa, mas requer cuidado para evitar loops infinitos.<br /><br /><b>g) Modulariza&ccedil;&atilde;o:</b> &Eacute; a pr&aacute;tica de dividir um programa em partes menores para facilitar o desenvolvimento e a manuten&ccedil;&atilde;o. Cada parte deve ter uma responsabilidade bem definida.<br /><br /><b>h) Pseudoc&oacute;digo:</b> &Eacute; uma forma de representar algoritmos usando uma linguagem de descri&ccedil;&atilde;o mais pr&oacute;xima da linguagem humana. &Eacute; &uacute;til para planejar a l&oacute;gica do programa antes de escrever o c&oacute;digo em uma linguagem de programa&ccedil;&atilde;o real.<br /><br /><b class='subtitle'>3. Conclus&atilde;o</b><br />Dominar a l&oacute;gica de programa&ccedil;&atilde;o &eacute; essencial para qualquer aspirante a programador. Com uma compreens&atilde;o s&oacute;lida desses conceitos fundamentais, voc&ecirc; estar&aacute; pronto para aprender qualquer linguagem de programa&ccedil;&atilde;o com muito mais facilidade. Continue praticando, explorando e construindo coisas incr&iacute;veis com o poder da l&oacute;gica de programa&ccedil;&atilde;o!",
         questions: [
-        
+
             {
                 title: "Atividade 1",
                 content: "a) O que é lógica de programação?",
@@ -47,7 +47,9 @@ const contents = [
             },
             {
                 title: "Atividade 3",
-                content: "",
+                content: "a) O que é lógica de programação?",
+                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
+                correctAnswer: "a"
             }
         ]
     },
@@ -55,7 +57,7 @@ const contents = [
         title: "Linguagem de Programação C",
         content: "O principal componente do arduino é o microcontrolador e é responsável pelo processamento de software e controle de portas de entrada e saída. É o cérebro do sistema e opera como um computador em um chip pequeno. Além disso, existem outros componentes básicos, como por exemplo:<br/><br/><div class='flex-img'><img style='width:250px' src='https://th.bing.com/th/id/R.df326cde14afef4545b7a2bc23ad7625?rik=l%2bbJm8UtntbWvg&riu=http%3a%2f%2fcdn-reichelt.de%2fbilder%2fweb%2fxxl_ws%2fA300%2fARDUINO_LEONARDO_02.png&ehk=6cxsEGtB4SZke8MFv%2ff6aU8vZr3xZ3dXBqtA33X%2fHNk%3d&risl=&pid=ImgRaw&r=0'></img><br/><div class='infos-arduino'>Fios e jumpers: Conectam os componentes.<br/>LEDs: Emitem luz quando energizados.<br/>Motores: Permitem o movimento de objetos.<br/>Botões: Enviam sinais quando pressionados.<br/>Sensores: Detectam mudanças no ambiente.<br/>Resistores: Controlam o fluxo de corrente.<br/>Servomotores: Controlam o movimento angular com precisão.<br/>Displays: Exibem informações.<br/>Protoboard: Para prototipar circuitos de forma rápida e fácil.</div></div><br/><h3>Um pouco mais a fundo sobre LEDs, resistores e sensores:</h3>Além disso, os LEDs (Light Emitting Diodes) assumem o papel de artistas da luz, iluminando seus projetos Arduino com cores vibrantes e brilho intenso. Imagine-os como miniaturas de lâmpadas, emitindo luz quando energizados, transformando suas ideias em realidade luminosa.</div>",
         questions: [
-        
+
             {
                 title: "Atividade 1",
                 content: "a) O que é lógica de programação?",
@@ -70,7 +72,9 @@ const contents = [
             },
             {
                 title: "Atividade 3",
-                content: "",
+                content: "a) O que é lógica de programação?",
+                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
+                correctAnswer: "a"
             }
         ]
     },
@@ -113,7 +117,7 @@ const contents = [
 ]
 function changeInfos(title, div) {
 
-    
+
 
     if (title.includes("Atividade")) {
 
@@ -129,8 +133,8 @@ function changeInfos(title, div) {
             const currentTheme = contents.find(content => content.title === currentThemeTitle);
             console.log(currentTheme.questions)
             console.log(title)
-            const {options, correctAnswer} = currentTheme.questions.find(question => question.title === title);
-            
+            const { options, correctAnswer } = currentTheme.questions.find(question => question.title === title);
+
             document.getElementById("options-tasks").innerHTML = options;
             document.getElementById("send-task").style.display = "block";
             document.getElementById("correct-answer").innerText = correctAnswer
@@ -168,29 +172,40 @@ function sendTask() {
     let userID = localStorage.getItem("userID");
     let answerMarked = '';
     document.getElementsByName("1").forEach(e => {
-        if(e.checked){
-            answerMarked= e.id.charAt(e.id.length - 1);
+        if (e.checked) {
+            answerMarked = e.id.charAt(e.id.length - 1);
         }
     });
     const correctAnswer = document.getElementById("correct-answer").textContent
-    if(answerMarked === correctAnswer){
-        console.log("acertou")
-    }else{
-        console.log("errou")
+    if (answerMarked === correctAnswer) {
+        fetch(url + "level/" + userID + "/10", {
+            method: 'PUT'
+        }).then(function (res) {
+            if (res.status == 200) {
+                alert("Você acertou! Ganhou mais 10 pontos");
+                location.href = "../home/index.html";
+            } else {
+                alert("Erro ao concluir atividade");
+            }
+        }).catch(function (err) {
+            console.log(err);
+        })
+    } else {
+        fetch(url + "level/" + userID + "/0", {
+            method: 'PUT'
+        }).then(function (res) {
+            if (res.status == 200) {
+                alert("Você errou! Estude mais e tente recuperar sua pontuação nas outras atividades!");
+                location.href = "../home/index.html";
+            } else {
+                alert("Erro ao concluir atividade");
+            }
+        }).catch(function (err) {
+            console.log(err);
+        })
     }
 
-    // fetch(url + "level/" + userID, {
-    //     method: 'PUT',
-    // }).then(function (res) {
-    //     if (res.status == 200) {
-    //         alert("Atividade concluída com sucesso");
-    //         location.href = "../home/index.html";
-    //     } else {
-    //         alert("Erro ao concluir atividade");
-    //     }
-    // }).catch(function (err) {
-    //     console.log(err);
-    // })
+
 
 }
 
@@ -221,7 +236,7 @@ function tasksOptions(title, div, contents) {
         return;
     }
 
-    if(level == null || level == 0 || level == undefined || level == "undefined"){
+    if (level == null || level == 0 || level == undefined || level == "undefined") {
         level = 1;
     }
 
