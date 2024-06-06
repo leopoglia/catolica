@@ -61,7 +61,7 @@ async function editUserPoints(req, id) {
 
 async function editUserLevel(id, points) {
     let user = await crud.getID("user", id);
-    user.level = user.level + 1; 
+    user.level = user.level + 1;
     user.points = parseInt(user.points) + parseInt(points);
 
     console.log(user.level);
@@ -71,8 +71,13 @@ async function editUserLevel(id, points) {
 }
 
 async function getUserLevel(userID) {
+
+    const step = await crud.get("step");
     const user = await crud.getID("user", userID);
-    return user.level;
+
+
+
+    return { level: user.level, step: step[0].number };
 }
 
 async function deleteUser(id) {
