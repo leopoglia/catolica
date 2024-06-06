@@ -34,22 +34,22 @@ const contents = [
         questions: [
 
             {
-                title: "Atividade 1",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 1",
+                "content": "e) Qual é a função das variáveis na programação?",
+                "options": "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>Armazenar valores constantes. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'>Armazenar valores que podem variar durante a execução do programa.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>Executar operações matemáticas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>Controlar a execução do programa.</label>",
+                "correctAnswer": "b"
             },
             {
-                title: "Atividade 2",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 2",
+                "content": "f) Qual dos seguintes não é um tipo de dado em programação?",
+                "options": "<br/><input type='radio' name='1' id='atv2a'> <label for='atv2a'>Inteiro. <br/><input type='radio' name='1' id='atv2b'> <label for='atv2b'>Texto.</label><br/><input type='radio' name='1' id='atv2c'> <label for='atv2c'>Lógico.</label><br/><input type='radio' name='1' id='atv2d'> <label for='atv2d'>Imutável.</label>",
+                "correctAnswer": "d"
             },
             {
-                title: "Atividade 3",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 3",
+                "content": "g) Qual dos seguintes tipos de dados é utilizado para armazenar uma coleção de elementos do mesmo tipo?",
+                "options": "<br/><input type='radio' name='1' id='atv3a'> <label for='atv3a'>String. <br/><input type='radio' name='1' id='atv3b'> <label for='atv3b'>Booleano.</label><br/><input type='radio' name='1' id='atv3c'> <label for='atv3c'>Array.</label><br/><input type='radio' name='1' id='atv3d'> <label for='atv3d'>Float.</label>",
+                "correctAnswer": "c"
             }
         ]
     },
@@ -59,22 +59,22 @@ const contents = [
         questions: [
 
             {
-                title: "Atividade 1",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 1",
+                "content": "a) Qual é a função da diretiva de pré-processador #include <stdio.h> em um programa em C?",
+                "options": "<br/><input type='radio' name='1' id='atv4a'> <label for='atv4a'>Permitir o uso da função printf() para exibir mensagens na tela. <br/><input type='radio' name='1' id='atv4b'> <label for='atv4b'>Definir a função principal main().</label><br/><input type='radio' name='1' id='atv4c'> <label for='atv4c'>Indicar que o programa terminou com sucesso.</label><br/><input type='radio' name='1' id='atv4d'> <label for='atv4d'>Declarar variáveis.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 2",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 2",
+                "content": "b) Qual tipo de dado é usado em C para armazenar números que podem conter casas decimais?",
+                "options": "<br/><input type='radio' name='1' id='atv5a'> <label for='atv5a'>Int. <br/><input type='radio' name='1' id='atv5b'> <label for='atv5b'>Bigint.</label><br/><input type='radio' name='1' id='atv5c'> <label for='atv5c'>Float.</label><br/><input type='radio' name='1' id='atv5d'> <label for='atv5d'>Char.</label>",
+                "correctAnswer": "c"
             },
             {
-                title: "Atividade 3",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 3",
+                "content": "c) Qual estrutura de controle em C é usada para repetir um conjunto de instruções várias vezes?",
+                "options": "<br/><input type='radio' name='1' id='atv6a'> <label for='atv6a'>Condicional (if/else). <br/><input type='radio' name='1' id='atv6b'> <label for='atv6b'>Função main().</label><br/><input type='radio' name='1' id='atv6c'> <label for='atv6c'>Diretiva de pré-processador (#include).</label><br/><input type='radio' name='1' id='atv6d'> <label for='atv6d'>Loop (for, while, do-while).</label>",
+                "correctAnswer": "d"
             }
         ]
     },
@@ -84,22 +84,22 @@ const contents = [
         questions: [
 
             {
-                title: "Atividade 1",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 1",
+                "content": "a) Qual função da biblioteca stdio.h é usada para receber entrada do usuário?",
+                "options": "<br/><input type='radio' name='1' id='atv4a'> <label for='atv4a'>printf(). <br/><input type='radio' name='1' id='atv4b'> <label for='atv4b'>scanf().</label><br/><input type='radio' name='1' id='atv4c'> <label for='atv4c'>putchar().</label><br/><input type='radio' name='1' id='atv4d'> <label for='atv4d'>getchar().</label>",
+                "correctAnswer": "b"
             },
             {
-                title: "Atividade 2",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 2",
+                "content": "b) Qual função da biblioteca stdlib.h é usada para alocação de memória dinâmica?",
+                "options": "<br/><input type='radio' name='1' id='atv5a'> <label for='atv5a'>atoi(). <br/><input type='radio' name='1' id='atv5b'> <label for='atv5b'>rand().</label><br/><input type='radio' name='1' id='atv5c'> <label for='atv5c'>malloc().</label><br/><input type='radio' name='1' id='atv5d'> <label for='atv5d'>strlen().</label>",
+                "correctAnswer": "c"
             },
             {
-                title: "Atividade 3",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 3",
+                "content": "c) Qual função da biblioteca string.h é usada para comparar duas strings?",
+                "options": "<br/><input type='radio' name='1' id='atv6a'> <label for='atv6a'>strlen(). <br/><input type='radio' name='1' id='atv6b'> <label for='atv6b'>strcpy().</label><br/><input type='radio' name='1' id='atv6c'> <label for='atv6c'>strcmp().</label><br/><input type='radio' name='1' id='atv6d'> <label for='atv6d'>strcat().</label>",
+                "correctAnswer": "c"
             }
         ]
     },
@@ -110,22 +110,22 @@ const contents = [
         questions: [
 
             {
-                title: "Atividade 1",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 1",
+                "content": "Em C, qual especificador de formato é usado para declarar uma variável do tipo inteiro?",
+                "options": "<br/><input type='radio' name='1' id='atv4a'> <label for='atv4a'>%d. <br/><input type='radio' name='1' id='atv4b'> <label for='atv4b'>%f.</label><br/><input type='radio' name='1' id='atv4c'> <label for='atv4c'>%c.</label><br/><input type='radio' name='1' id='atv4d'> <label for='atv4d'>%s.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 2",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 2",
+                "content": "Qual a diferença entre as variáveis do tipo float e double em C?",
+                "options": "<br/><input type='radio' name='1' id='atv5a'> <label for='atv5a'>Float tem precisão de até 6 números após a casa decimal, enquanto double tem precisão de até 10 números. <br/><input type='radio' name='1' id='atv5b'> <label for='atv5b'>Float é usado para números inteiros, enquanto double é usado para caracteres.</label><br/><input type='radio' name='1' id='atv5c'> <label for='atv5c'>Float é usado para números inteiros, enquanto double é usado para números com casas decimais.</label><br/><input type='radio' name='1' id='atv5d'> <label for='atv5d'>Float tem precisão de até 10 números após a casa decimal, enquanto double tem precisão de até 6 números.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 3",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 3",
+                "content": "Qual tipo de variável em C é utilizado para armazenar caracteres individuais?",
+                "options": "<br/><input type='radio' name='1' id='atv6a'> <label for='atv6a'>int. <br/><input type='radio' name='1' id='atv6b'> <label for='atv6b'>float.</label><br/><input type='radio' name='1' id='atv6c'> <label for='atv6c'>double.</label><br/><input type='radio' name='1' id='atv6d'> <label for='atv6d'>char.</label>",
+                "correctAnswer": "d"
             }
         ]
     },
@@ -135,22 +135,22 @@ const contents = [
         questions: [
 
             {
-                title: "Atividade 1",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 1",
+                "content": "Qual função em C é usada para ler dados do teclado e atribuí-los a variáveis?",
+                "options": "<br/><input type='radio' name='1' id='atv4a'> <label for='atv4a'>printf(). <br/><input type='radio' name='1' id='atv4b'> <label for='atv4b'>scanf().</label><br/><input type='radio' name='1' id='atv4c'> <label for='atv4c'>fputs().</label><br/><input type='radio' name='1' id='atv4d'> <label for='atv4d'>fgets().</label>",
+                "correctAnswer": "b"
             },
             {
-                title: "Atividade 2",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 2",
+                "content": "Qual função em C é usada para imprimir dados na tela?",
+                "options": "<br/><input type='radio' name='1' id='atv5a'> <label for='atv5a'>scanf(). <br/><input type='radio' name='1' id='atv5b'> <label for='atv5b'>fgets().</label><br/><input type='radio' name='1' id='atv5c'> <label for='atv5c'>fputs().</label><br/><input type='radio' name='1' id='atv5d'> <label for='atv5d'>printf().</label>",
+                "correctAnswer": "d"
             },
             {
-                title: "Atividade 3",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 3",
+                "content": "Qual função em C é usada para ler uma linha inteira de texto de um arquivo e armazená-la em um buffer?",
+                "options": "<br/><input type='radio' name='1' id='atv6a'> <label for='atv6a'>scanf(). <br/><input type='radio' name='1' id='atv6b'> <label for='atv6b'>fgets().</label><br/><input type='radio' name='1' id='atv6c'> <label for='atv6c'>fputs().</label><br/><input type='radio' name='1' id='atv6d'> <label for='atv6d'>printf().</label>",
+                "correctAnswer": "b"
             }
         ]
     },
@@ -161,47 +161,47 @@ const contents = [
         questions: [
 
             {
-                title: "Atividade 1",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 1",
+                "content": "O que são estruturas condicionais em programação?",
+                "options": "<br/><input type='radio' name='1' id='atv4a'> <label for='atv4a'>Estruturas que permitem verificar condições e alterar o fluxo do algoritmo com base nessas verificações. <br/><input type='radio' name='1' id='atv4b'> <label for='atv4b'>Estruturas usadas apenas para repetir blocos de código. </label><br/><input type='radio' name='1' id='atv4c'> <label for='atv4c'>Estruturas que permitem apenas a entrada de dados pelo usuário.</label><br/><input type='radio' name='1' id='atv4d'> <label for='atv4d'>Estruturas que permitem apenas a saída de dados para o usuário.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 2",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 2",
+                "content": "Como funcionam as estruturas condicionais em C?",
+                "options": "<br/><input type='radio' name='1' id='atv5a'> <label for='atv5a'>Avaliam uma condição e executam blocos de comando com base na avaliação de verdadeiro ou falso. <br/><input type='radio' name='1' id='atv5b'> <label for='atv5b'>Permitem a repetição infinita de blocos de código. </label><br/><input type='radio' name='1' id='atv5c'> <label for='atv5c'>Permitem apenas a entrada de dados do usuário.</label><br/><input type='radio' name='1' id='atv5d'> <label for='atv5d'>Permitem a declaração de variáveis dinâmicas.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 3",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 3",
+                "content": "Qual comando é usado para testar múltiplas condições em uma estrutura condicional em C?",
+                "options": "<br/><input type='radio' name='1' id='atv6a'> <label for='atv6a'>if-else. <br/><input type='radio' name='1' id='atv6b'> <label for='atv6b'>else if. </label><br/><input type='radio' name='1' id='atv6c'> <label for='atv6c'>for. </label><br/><input type='radio' name='1' id='atv6d'> <label for='atv6d'>while.</label>",
+                "correctAnswer": "b"
             }
         ]
     },
     {
         title: "Laços de Repetição",
-        content: "<h2> O que são estruturas condicionais? </h2>  <div>  Os laços de repetição, também conhecidos como loops, são estruturas de programação que permitem executar um bloco de código várias vezes de forma eficiente. Eles são fundamentais em programação para automatizar tarefas repetitivas e para processar coleções de dados.</div> <div> Existem geralmente três tipos principais de laços de repetição em muitas linguagens de programação: </div> <ol> <li> For loop (Laço para): O laço for é usado quando se sabe antecipadamente quantas vezes o bloco de código precisa ser repetido. Ele geralmente tem uma estrutura que inclui uma variável de controle, uma condição de parada e uma atualização da variável de controle em cada iteração. </li>    <li> While loop (Laço enquanto): O laço while é usado quando o número de iterações não é conhecido antecipadamente, mas o bloco de código precisa ser repetido enquanto uma condição especificada for verdadeira. Ele verifica a condição antes de cada iteração. </li>   <li>  Do-While loop (Laço faça-enquanto): Alguns idiomas, como C/C++, possuem uma estrutura chamada do-while que é semelhante ao while loop, exceto que a condição é verificada após a execução do bloco de código, garantindo que o bloco seja executado pelo menos uma vez. </li>  </ol><div>Em todos os tipos de loops, é importante garantir que a condição de saída seja eventualmente alcançada para evitar loops infinitos, o que pode travar o programa. Além disso, é comum usar variáveis de controle para rastrear o progresso do loop e evitar problemas de lógica, como acessar dados fora dos limites ou repetir a execução de certos blocos de código desnecessariamente.</div>",
+        content: "Os laços de repetição, também conhecidos como loops, são estruturas de programação que permitem executar um bloco de código várias vezes de forma eficiente. Eles são fundamentais em programação para automatizar tarefas repetitivas e para processar coleções de dados.</div> <div> Existem geralmente três tipos principais de laços de repetição em muitas linguagens de programação: </div> <ol> <li> For loop (Laço para): O laço for é usado quando se sabe antecipadamente quantas vezes o bloco de código precisa ser repetido. Ele geralmente tem uma estrutura que inclui uma variável de controle, uma condição de parada e uma atualização da variável de controle em cada iteração. </li>    <li> While loop (Laço enquanto): O laço while é usado quando o número de iterações não é conhecido antecipadamente, mas o bloco de código precisa ser repetido enquanto uma condição especificada for verdadeira. Ele verifica a condição antes de cada iteração. </li>   <li>  Do-While loop (Laço faça-enquanto): Alguns idiomas, como C/C++, possuem uma estrutura chamada do-while que é semelhante ao while loop, exceto que a condição é verificada após a execução do bloco de código, garantindo que o bloco seja executado pelo menos uma vez. </li>  </ol><div>Em todos os tipos de loops, é importante garantir que a condição de saída seja eventualmente alcançada para evitar loops infinitos, o que pode travar o programa. Além disso, é comum usar variáveis de controle para rastrear o progresso do loop e evitar problemas de lógica, como acessar dados fora dos limites ou repetir a execução de certos blocos de código desnecessariamente.</div>",
         questions: [
 
             {
-                title: "Atividade 1",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 1",
+                "content": "O que são laços de repetição em programação?",
+                "options": "<br/><input type='radio' name='1' id='atv4a'> <label for='atv4a'>Estruturas de programação que permitem executar um bloco de código várias vezes de forma eficiente. <br/><input type='radio' name='1' id='atv4b'> <label for='atv4b'>Estruturas de programação que permitem executar um bloco de código apenas uma vez. </label><br/><input type='radio' name='1' id='atv4c'> <label for='atv4c'>Estruturas de programação que permitem executar um bloco de código baseado em condições. </label><br/><input type='radio' name='1' id='atv4d'> <label for='atv4d'>Estruturas de programação que permitem executar um bloco de código baseado em eventos.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 2",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 2",
+                "content": "Quando o laço do-while é verificado em comparação com o while loop?",
+                "options": "<br/><input type='radio' name='1' id='atv5a'> <label for='atv5a'>A condição é verificada antes da execução do bloco de código no while loop, enquanto no do-while loop a condição é verificada após a execução do bloco de código. <br/><input type='radio' name='1' id='atv5b'> <label for='atv5b'>A condição é verificada após a execução do bloco de código no while loop, enquanto no do-while loop a condição é verificada antes da execução do bloco de código. </label><br/><input type='radio' name='1' id='atv5c'> <label for='atv5c'>Ambos os loops verificam a condição antes da execução do bloco de código. </label><br/><input type='radio' name='1' id='atv5d'> <label for='atv5d'>Ambos os loops verificam a condição após a execução do bloco de código.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 3",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 3   ",
+                "content": "O que é importante para evitar em todos os tipos de loops?",
+                "options": "<br/><input type='radio' name='1' id='atv6a'> <label for='atv6a'>Garantir que a condição de saída seja eventualmente alcançada para evitar loops infinitos. <br/><input type='radio' name='1' id='atv6b'> <label for='atv6b'>Garantir que o bloco de código seja executado pelo menos uma vez. </label><br/><input type='radio' name='1' id='atv6c'> <label for='atv6c'>Garantir que o bloco de código seja executado o máximo possível de vezes. </label><br/><input type='radio' name='1' id='atv6d'> <label for='atv6d'>Garantir que a condição de saída seja sempre evitada para maximizar a eficiência.</label>",
+                "correctAnswer": "a"
             }
         ]
     },
@@ -212,22 +212,22 @@ const contents = [
         questions: [
 
             {
-                title: "Atividade 1",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 1",
+                "content": "O que é uma função em programação?",
+                "options": "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>Um bloco de código que executa uma tarefa específica e pode ser chamado de qualquer parte de um programa. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'>Um bloco de código que executa uma tarefa específica e só pode ser chamado do programa principal. </label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>Um bloco de código que executa múltiplas tarefas ao mesmo tempo. </label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>Um bloco de código que executa uma tarefa geral e não pode ser chamado de outras partes do programa.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 2",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 2",
+                "content": "Qual é a função dos parâmetros em uma função?",
+                "options": "<br/><input type='radio' name='1' id='atv2a'> <label for='atv2a'>Os parâmetros funcionam como a interface de comunicação entre o programa e a função, permitindo passar valores/dados. <br/><input type='radio' name='1' id='atv2b'> <label for='atv2b'>Os parâmetros controlam o fluxo de execução do programa. </label><br/><input type='radio' name='1' id='atv2c'> <label for='atv2c'>Os parâmetros são usados apenas para declarar variáveis internas à função. </label><br/><input type='radio' name='1' id='atv2d'> <label for='atv2d'>Os parâmetros são usados para definir o tipo de retorno da função.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 3",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 3",
+                "content": "Qual é a função da lista de parâmetros em uma função?",
+                "options": "<br/><input type='radio' name='1' id='atv3a'> <label for='atv3a'>Funcionam como a interface de comunicação entre o programa e a função, permitindo passar valores/dados. <br/><input type='radio' name='1' id='atv3b'> <label for='atv3b'>Controlam o fluxo de execução do programa. </label><br/><input type='radio' name='1' id='atv3c'> <label for='atv3c'>São usados apenas para declarar variáveis internas à função. </label><br/><input type='radio' name='1' id='atv3d'> <label for='atv3d'>São usados para definir o tipo de retorno da função.</label>",
+                "correctAnswer": "a"
             }
         ]
     },
@@ -238,22 +238,22 @@ const contents = [
         questions: [
 
             {
-                title: "Atividade 1",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 1",
+                "content": "Quem desenvolveu o Arduino?",
+                "options": "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>Massimo Banzi, David Cuarielles, Tom Igoe, Gianluca Martino e David Mellist. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'>Bill Gates, Steve Jobs e Steve Wozniak. </label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>Mark Zuckerberg e Eduardo Saverin. </label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>Elon Musk e Jeff Bezos.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 2",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 2",
+                "content": "Qual é uma das vantagens da plataforma Arduino?",
+                "options": "<br/><input type='radio' name='1' id='atv2a'> <label for='atv2a'>Possui ambiente multiplataforma. <br/><input type='radio' name='1' id='atv2b'> <label for='atv2b'>Requer uma IDE de programação específica. </label><br/><input type='radio' name='1' id='atv2c'> <label for='atv2c'>Pode ser programado apenas por meio de programação em assembly. </label><br/><input type='radio' name='1' id='atv2d'> <label for='atv2d'>É um hardware fechado, sem código-fonte acessível.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 3",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 3",
+                "content": "Como as placas Arduino podem ser conectadas ao computador?",
+                "options": "<br/><input type='radio' name='1' id='atv3a'> <label for='atv3a'>Por meio do barramento serial universal (USB). <br/><input type='radio' name='1' id='atv3b'> <label for='atv3b'>Por meio de conexão de rede sem fio. </label><br/><input type='radio' name='1' id='atv3c'> <label for='atv3c'>Por meio de uma conexão de modem. </label><br/><input type='radio' name='1' id='atv3d'> <label for='atv3d'>Por meio de um cabo HDMI.</label>",
+                "correctAnswer": "a"
             }
         ]
     },
@@ -262,24 +262,23 @@ const contents = [
         content: "O principal componente do arduino é o microcontrolador e é responsável pelo processamento de software e controle de portas de entrada e saída. É o cérebro do sistema e opera como um computador em um chip pequeno. Além disso, existem outros componentes básicos, como por exemplo:<br/><br/><div class='flex-img'><img style='width:250px' src='https://th.bing.com/th/id/R.df326cde14afef4545b7a2bc23ad7625?rik=l%2bbJm8UtntbWvg&riu=http%3a%2f%2fcdn-reichelt.de%2fbilder%2fweb%2fxxl_ws%2fA300%2fARDUINO_LEONARDO_02.png&ehk=6cxsEGtB4SZke8MFv%2ff6aU8vZr3xZ3dXBqtA33X%2fHNk%3d&risl=&pid=ImgRaw&r=0'></img><br/><div class='infos-arduino'>Fios e jumpers: Conectam os componentes.<br/>LEDs: Emitem luz quando energizados.<br/>Motores: Permitem o movimento de objetos.<br/>Botões: Enviam sinais quando pressionados.<br/>Sensores: Detectam mudanças no ambiente.<br/>Resistores: Controlam o fluxo de corrente.<br/>Servomotores: Controlam o movimento angular com precisão.<br/>Displays: Exibem informações.<br/>Protoboard: Para prototipar circuitos de forma rápida e fácil.</div></div><br/><h3>Um pouco mais a fundo sobre LEDs, resistores e sensores:</h3>Além disso, os LEDs (Light Emitting Diodes) assumem o papel de artistas da luz, iluminando seus projetos Arduino com cores vibrantes e brilho intenso. Imagine-os como miniaturas de lâmpadas, emitindo luz quando energizados, transformando suas ideias em realidade luminosa.</div> <div>Os resistores são essenciais para o controle de fluxo de corrente em circuitos Arduino. Considere-os como reguladores precisos, que controlam a corrente elétrica na intensidade e no caminho certo sem prejudicar o funcionamento dos demais componentes</div><br><div>Por fim, os sensores são transdutores que monitoram o meio ambiente. Eles transformam dados físicos em sinais elétricos, permitindo que o nosso Arduino os controle. Temperatura, umidade, distância, luminosidade, obstáculos, posicionamento, presença e movimentação são os tipos mais comuns. O Arduino pode usar os atuadores para processar as informações dos sensores.</div>"
         ,
         questions: [
-
             {
-                title: "Atividade 1",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 1",
+                "content": "Qual é o principal componente do Arduino?",
+                "options": "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>Microcontrolador. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'>Fios e jumpers. </label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>LEDs. </label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>Botões.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 2",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 2",
+                "content": "Qual componente emite luz quando energizado?",
+                "options": "<br/><input type='radio' name='1' id='atv2a'> <label for='atv2a'>LEDs. <br/><input type='radio' name='1' id='atv2b'> <label for='atv2b'>Motores. </label><br/><input type='radio' name='1' id='atv2c'> <label for='atv2c'>Botões. </label><br/><input type='radio' name='1' id='atv2d'> <label for='atv2d'>Sensores.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 3",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 3",
+                "content": "Qual é a função dos resistores em circuitos Arduino?",
+                "options": "<br/><input type='radio' name='1' id='atv3a'> <label for='atv3a'>Controlam o fluxo de corrente. <br/><input type='radio' name='1' id='atv3b'> <label for='atv3b'>Detectam mudanças no ambiente. </label><br/><input type='radio' name='1' id='atv3c'> <label for='atv3c'>Permitem o movimento de objetos. </label><br/><input type='radio' name='1' id='atv3d'> <label for='atv3d'>Exibem informações.</label>",
+                "correctAnswer": "a"
             }
         ]
     },
@@ -290,22 +289,22 @@ const contents = [
         questions: [
 
             {
-                title: "Atividade 1",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 1",
+                "content": "Qual é uma das vantagens dos simuladores de robôs?",
+                "options": "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>Custos e tempo de desenvolvimento mais baixos. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'>Modelos físicos precisos. </label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>Dificuldade em testar algoritmos de controle. </label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>Limitação na simulação do comportamento real do ambiente.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 2",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 2",
+                "content": "O que inclui normalmente um simulador de robô?",
+                "options": "<br/><input type='radio' name='1' id='atv2a'> <label for='atv2a'>Modelos físicos e interface de programação. <br/><input type='radio' name='1' id='atv2b'> <label for='atv2b'>Apenas modelos físicos. </label><br/><input type='radio' name='1' id='atv2c'> <label for='atv2c'>Apenas interface de programação. </label><br/><input type='radio' name='1' id='atv2d'> <label for='atv2d'>Sensores e atuadores.</label>",
+                "correctAnswer": "a"
             },
             {
-                title: "Atividade 3",
-                content: "a) O que é lógica de programação?",
-                options: "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>É a habilidade de pensar de forma estruturada e lógica para resolver problemas. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'> É a habilidade de pensar de forma desestruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>É a habilidade de pensar de forma estruturada e ilógica para resolver problemas.</label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>É a habilidade de pensar de forma desestruturada e lógica para resolver problemas.</label>",
-                correctAnswer: "a"
+                "title": "Atividade 3",
+                "content": "Qual é uma das limitações dos simuladores de robôs?",
+                "options": "<br/><input type='radio' name='1' id='atv3a'> <label for='atv3a'>Precisão limitada dos modelos físicos. <br/><input type='radio' name='1' id='atv3b'> <label for='atv3b'>Facilidade em simular completamente o comportamento real do ambiente. </label><br/><input type='radio' name='1' id='atv3c'> <label for='atv3c'>Custos baixos de desenvolvimento. </label><br/><input type='radio' name='1' id='atv3d'> <label for='atv3d'>Ampla disponibilidade de sensores.</label>",
+                "correctAnswer": "a"
             }
         ]
     },
