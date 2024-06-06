@@ -3,7 +3,7 @@
 * {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    user-select: none;
+    /* user-select: none; */
 }
 
 @font-face {
@@ -64,4 +64,8 @@ hr {
 
 .flex-img {
     display: flex;
+}
+
+iframe{
+    border-radius: 20px;
 }
