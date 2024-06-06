@@ -77,7 +77,7 @@ async function getUserLevel(userID) {
 
 
 
-    return { level: user.level, step: step[0].number };
+    return JSON.stringify({ level: user.level, step: step[0].number });
 }
 
 async function deleteUser(id) {
