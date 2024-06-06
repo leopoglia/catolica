@@ -86,6 +86,12 @@ main {
     font-weight: bold;
 }
 
+
+.box{
+    height: 80px !important;
+    min-height: 80px !important;
+}
+
 .box,
 .box-task {
     padding: 10px;
