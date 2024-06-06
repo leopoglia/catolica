@@ -10,6 +10,25 @@ function openButtonLogin() {
         document.getElementById("logout").style.display = "block";
         document.getElementById("username").innerHTML = localStorage.getItem("name") + " (" + localStorage.getItem("level") + ")";
     }
+
+
+
+
+    var step = localStorage.getItem("step");
+
+
+    for(var i = 1; i <= 10; i++){
+        console.log(step + " - " + i)
+        console.log(document.getElementById("step-" + i))
+
+        if(step >= i){
+            document.getElementById("step-" + i).disabled = false;
+        }else{
+            document.getElementById("step-" + i).disabled = true;
+        }
+    }
+
+        
 }
 
 
@@ -281,33 +300,8 @@ const contents = [
             }
         ]
     },
-    // {
-    //     title: "Simuladores de robótica",
-    //     content: "<Os simuladores de robôs são ferramentas importantes no campo da robótica, fornecendo um ambiente virtual para projetar, testar e melhorar algoritmos e sistemas robóticos antes de serem implementados em dispositivos reais. Eles são usados ​​em diversas aplicações, desde o treinamento de operadores até o desenvolvimento de algoritmos de controle.</p><p>Um simulador de robô normalmente inclui modelos físicos que representam o comportamento e a interação do robô com o ambiente, bem como uma interface de programação que permite aos usuários desenvolver e testar algoritmos de controle, design, movimento e percepção. Esses simuladores podem ser complexos, desde ambientes 2D simples até simulações 3D muito realistas, e podem ser usados ​​em robôs que vão desde manipuladores industriais até veículos autônomos.        </p><p>As vantagens dos simuladores de robôs incluem custos e tempo de desenvolvimento mais baixos, a capacidade de testar cenários complexos e arriscados em um ambiente seguro e a facilidade de iterar e otimizar algoritmos antes da implantação real.        </p><p>No entanto, os simuladores também apresentam algumas limitações, como a precisão limitada dos modelos físicos e a dificuldade em simular completamente o comportamento real do ambiente e dos sensores. Apesar disso, eles ainda desempenham um papel importante no desenvolvimento e no progresso da robótica em muitos campos."
-    //     ,
-    //     questions: [
-
-    //         {
-    //             "title": "Atividade 1",
-    //             "content": "Qual é uma das vantagens dos simuladores de robôs?",
-    //             "options": "<br/><input type='radio' name='1' id='atv1a'> <label for='atv1a'>Custos e tempo de desenvolvimento mais baixos. <br/><input type='radio' name='1' id='atv1b'> <label for='atv1b'>Modelos físicos precisos. </label><br/><input type='radio' name='1' id='atv1c'> <label for='atv1c'>Dificuldade em testar algoritmos de controle. </label><br/><input type='radio' name='1' id='atv1d'> <label for='atv1d'>Limitação na simulação do comportamento real do ambiente.</label>",
-    //             "correctAnswer": "a"
-    //         },
-    //         {
-    //             "title": "Atividade 2",
-    //             "content": "O que inclui normalmente um simulador de robô?",
-    //             "options": "<br/><input type='radio' name='1' id='atv2a'> <label for='atv2a'>Modelos físicos e interface de programação. <br/><input type='radio' name='1' id='atv2b'> <label for='atv2b'>Apenas modelos físicos. </label><br/><input type='radio' name='1' id='atv2c'> <label for='atv2c'>Apenas interface de programação. </label><br/><input type='radio' name='1' id='atv2d'> <label for='atv2d'>Sensores e atuadores.</label>",
-    //             "correctAnswer": "a"
-    //         },
-    //         {
-    //             "title": "Atividade 3",
-    //             "content": "Qual é uma das limitações dos simuladores de robôs?",
-    //             "options": "<br/><input type='radio' name='1' id='atv3a'> <label for='atv3a'>Precisão limitada dos modelos físicos. <br/><input type='radio' name='1' id='atv3b'> <label for='atv3b'>Facilidade em simular completamente o comportamento real do ambiente. </label><br/><input type='radio' name='1' id='atv3c'> <label for='atv3c'>Custos baixos de desenvolvimento. </label><br/><input type='radio' name='1' id='atv3d'> <label for='atv3d'>Ampla disponibilidade de sensores.</label>",
-    //             "correctAnswer": "a"
-    //         }
-    //     ]
-    // },
 ]
+
 function changeInfos(title, div) {
 
     if (title.includes("Atividade")) {
@@ -418,8 +412,9 @@ function getUserLevel() {
         console.log(res);
         return res.json();
     }).then(function (data) {
-        console.log(data);
-        localStorage.setItem("level", data);
+        data = JSON.parse(data);
+        localStorage.setItem("level", data.level);
+        localStorage.setItem("step", data.step);
     }).catch(function (err) {
         console.log(err);
     })
@@ -557,7 +552,7 @@ function alertTask(level, step) {
 }
 
 
-changeInfos("Lógica de Programação", document.getElementById("box-first"));
+changeInfos("Lógica de Programação", document.getElementById("level-1"));
 
 
 function returnActivity() {
