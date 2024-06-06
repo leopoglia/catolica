@@ -303,6 +303,24 @@ main {
     width: 100%;
 }
 
+code{
+    background: rgba(255, 255, 255, 0.12);
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: Console !important;
+}
+
+code span{
+    font-family: Console !important;
+}
+
+.hljs{
+    display: block;
+    margin: 15px 10px !important;
+    padding: 8px;
+}
+
 @media screen and (max-width: 768px) {
 
     .tasks{

@@ -6,16 +6,21 @@
     user-select: none;
 }
 
-.flex{
+@font-face {
+    font-family: Console;
+    src: url(../public/Consolas.ttf)
+}
+
+.flex {
     display: flex;
     align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.btn-primary{
+.btn-primary {
     cursor: pointer;
     width: 120px;
     background-color: #fff;
@@ -27,13 +32,13 @@ a{
     transition: 0.2s;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: transparent;
     color: #fff;
     border: 2px solid #fff;
 }
 
-.btn-secondary{
+.btn-secondary {
     cursor: pointer;
     width: 120px;
     background-color: transparent;
@@ -45,18 +50,18 @@ a{
     transition: 0.2s;
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: #fff;
     color: #000;
     border: 2px solid #fff;
 }
 
-hr{
+hr {
     margin: 30px 0;
     border: 2px solid rgba(255, 255, 255, 0.08);
     width: 100%;
 }
 
-.flex-img{
+.flex-img {
     display: flex;
 }
