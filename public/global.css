@@ -69,3 +69,16 @@ hr {
 iframe{
     border-radius: 20px;
 }
+
+@media  (max-width: 768px) {
+    .integrantes {
+        display: none;
+    }
+
+    .btn-secondary,
+    .btn-primary {
+        width: 100px;
+    }
+
+
+}
