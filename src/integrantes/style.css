@@ -141,4 +141,27 @@ input::placeholder{
         width: auto;
         padding: 0px;
     }
+
+    .integrants{
+        width: 100%;
+        flex-direction: column;
+        padding:  0px !important;
+    }
+
+    .integrants li{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .integrants li div{
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .container-integrants, .container-integrants div{
+        width: 100%;
+    }
 }
