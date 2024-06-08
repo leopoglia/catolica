@@ -216,7 +216,7 @@ const contents = [
                 "correctAnswer": "a"
             },
             {
-                "title": "Atividade 3   ",
+                "title": "Atividade 3",
                 "content": "O que é importante para evitar em todos os tipos de loops?",
                 "options": "<br/><input type='radio' name='1' id='atv6a'> <label for='atv6a'>Garantir que a condição de saída seja eventualmente alcançada para evitar loops infinitos. <br/><input type='radio' name='1' id='atv6b'> <label for='atv6b'>Garantir que o bloco de código seja executado pelo menos uma vez. </label><br/><input type='radio' name='1' id='atv6c'> <label for='atv6c'>Garantir que o bloco de código seja executado o máximo possível de vezes. </label><br/><input type='radio' name='1' id='atv6d'> <label for='atv6d'>Garantir que a condição de saída seja sempre evitada para maximizar a eficiência.</label>",
                 "correctAnswer": "a"
