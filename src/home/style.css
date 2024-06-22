@@ -92,6 +92,10 @@ main {
     min-height: 80px !important;
 }
 
+.slides{
+    margin-right: 10px;
+}
+
 .box,
 .box-task {
     padding: 10px;
@@ -355,6 +359,10 @@ code *{
 }
 
 @media screen and (max-width: 768px) {
+
+    .slides{
+        display: none;
+    }
 
     .tasks{
         flex-direction: column;
